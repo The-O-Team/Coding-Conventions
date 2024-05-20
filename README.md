@@ -17,7 +17,7 @@ They are loosely based on the OCA guidelines, but with some changes to fit the c
 
 - Importance of following the coding guidelines
 - Common issues observed in previous reviews
-- Tools and linters used to enforce style
+- Tools and linters used to enforce style (pre-commit)
   - eslint
   - black
   - pylint (Odoo flavour)
@@ -30,6 +30,12 @@ They are loosely based on the OCA guidelines, but with some changes to fit the c
 - Documenting complex logic and APIs
 - Ensuring code is understandable for future developers
 - Importance of keeping documentation up-to-date
+
+## Automated Testing
+
+- Should be added to test business logic, not odoo's core logic
+- Do not only test the happy path
+- Write basic setups and then test individual scenarios (No method testing, only scenario testing)
 
 ## Writing modular and reusable code
 
