@@ -14,6 +14,22 @@ go a long way towards making your commits more helpful:
 
 -   Be sure to add your full name to your Github profile here.
 
+## Pre-commit hooks
+
+### Installation
+To install the pre-commit hooks, run the following command:
+
+```shell
+pip install pre-commit
+```
+
+### Usage
+When you commit code, a pre-commit hook will check your code for common mistakes. If the hook fails, the commit will be aborted. To install the pre-commit hook, run the following command:
+
+```shell
+pre-commit install
+```
+
 ## Branch naming
 
 Branches should be named after the issue they are related to and start with the number of the issue they refer to. If there is no issue, use a short description of the task. Branch names should be in lowercase and use dashes to separate words. For example:
