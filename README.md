@@ -222,11 +222,10 @@ addons/plant_nursery/
 |   |--make_plant_order_views.xml
 ```
 
-> [!IMPORTANT] Note
-> File names should only contain `[a-z0-9_]` (lowercase alphanumerics and
-> `_`)
+> [!IMPORTANT]
+> File names should only contain `[a-z0-9_]` (lowercase alphanumerics and `_`)
 
-> [!WARNING] Warning
+> [!WARNING]
 > Use correct file permissions : folder 755 and file 644.
 
 # XML files
@@ -395,7 +394,7 @@ view to be set.
 
 # Python
 
-> [!IMPORTANT] Note
+> [!IMPORTANT]
 > Do not forget to read the Security Pitfalls section as well to write secure code.
 
 ## Python Black
@@ -619,7 +618,7 @@ records.with_context(new_context).do_stuff() # all the context is replaced
 records.with_context(**additionnal_context).do_other_stuff() # additionnal_context values override native context ones
 ```
 
-> [!WARNING] Warning
+> [!WARNING]
 > Passing parameter in context can have dangerous side-effects.
 > Since the values are propagated automatically, some unexpected behavior
 may appear. Calling `create()` method of a model with *default_my_field*
@@ -1018,7 +1017,7 @@ class Event(models.Model):
 
 # Javascript
 
-> [!IMPORTANT] Development tip
+> [!IMPORTANT]
 > Using javascript in Odoo should be avoided as much as possible. If the
 functionality can be achieved using the Odoo framework, it should be
 done that way. Unnecessary javascript increases the complexity of the
@@ -1155,6 +1154,7 @@ strict, transparent and informative.
 Avoid creating hyper-specific classes and variable names. When naming
 nested elements, opt for the "Grandchild" approach.
 
+> [!CAUTION]
 > Example don't
 ``` html
 <div class=“o_element_wrapper”>
@@ -1166,6 +1166,7 @@ nested elements, opt for the "Grandchild" approach.
 </div>
 ```
 
+> [!TIP]
 > Example do
 
 ``` html
