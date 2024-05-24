@@ -7,6 +7,11 @@ eases maintenance, helps debugging, lowers complexity and promotes
 reliability. These guidelines should be applied to every new module and
 to all new development.
 
+## GIT guidelines
+
+These are placed in the GIT.md file. Please refer to that file for more
+information. [GIT guidelines](GIT.md)
+
 # Module structure
 
 ## Directories
