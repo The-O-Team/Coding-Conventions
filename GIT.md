@@ -110,3 +110,33 @@ Finally here are some examples of correct commit messages :
 
 > [!TIP]
 > Use the long description to explain the *why* not the *what*, the *what* can be seen in the diff
+
+## Pull Requests
+
+### Policy
+
+A pull request should be created when you've checked the following checklist:
+
+1. **Code Quality**: The code is well written, easy to read, and follows the guidelines.
+2. **Tests**: The code is covered by tests and all tests pass.
+3. **Documentation**: The code is documented and the documentation is up to date.
+4. **Squash Commits**: The commits are squashed into a single commit with a clear message which follows the guidelines in this document. A PR should never be created with multiple commits except when there is a good reason to do so.
+  Example of bad commit history
+    ```shell
+    [ADD] models: add new model
+    [IMP] models: improve model
+    [IMP] models: improve model
+    [FIX] models: fix model
+    ```
+    Example of good commit history
+    ```shell
+    [ADD] models: add new model
+    ```
+5. **Rebase**: The branch is rebased on the latest develop branch.
+6. Assign the PR to the correct reviewer(s) and add the correct labels.
+
+When creating a pull request, make sure to follow the following guidelines:
+
+-  **Title**: The title will be automatically filled with the commit message
+- **Description**: The description should be a summary of the changes and the reason behind them. Usually the text from the commit message is enough.
+- **Target branch**: The target branch should be the branch you want to merge your changes into. Usually this is the develop branch, because that branch will be merged to the master branch when a new release is made.
