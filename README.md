@@ -1020,6 +1020,27 @@ class Event(models.Model):
         ...
 ```
 
+## Security Naming Conventions
+
+### Security Groups
+
+- Keep the name of the group short and meaningful.
+- Suffix the xmlid of the group with `_group` to make it clear that it is a group.
+- Use user and manager groups for the most common cases.
+
+### Model Access Rules
+
+- When adding a `ir.model.access` rule in the CSV file, use the following
+  format to create clear entries in the CSV file:
+
+  ``` csv
+  id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+  access_<model_name>_<group_name>,access <model_name> <group_name>,model_<model_name>,<group_name>,x,x,x,x
+  ```
+  where `<model_name>` is the name of the model and `<group_name>` is 
+  the name of the group.
+
+
 # Javascript
 
 > [!IMPORTANT]
