@@ -424,6 +424,47 @@ configuration file `.flake8`:
 - E501: line too long
 - W503: line break before binary operator
 
+## File header
+
+The following file header should **always** be present at the beginning of each python
+file. Except for ``__init__.py`` files.
+
+``` python
+# Copyright 2024 M.C.S. NV
+# @author Firstname Lastname <email@domain.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+```
+
+## Odoo manifest
+
+The manifest file should contain only useful information and avoid the use of
+unnecessary keys. Avoid deprecated keys like `description`.
+
+An example:
+```python
+# Copyright 2024 M.C.S. NV
+# @author Firstname Lastname <email@domain.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+{
+    "name": "Module name",
+    "version": "17.0.1.0.0",
+    "category": "Technical",
+    "summary": "A one sentence summary of the module.",
+    "author": "MCS Promante",
+    "website": "https://www.promante.com",
+    "depends": [
+        "a_module_name",
+    ],
+    "license": "OPL-1",
+    "installable": True,
+    "auto_install": False,
+}
+```
+
+> [!IMPORTANT]
+> Keep in mind that the `depends` key should only specify a modules direct parents,
+> not the modules that are already dependencies of any parent module.
+
 ## Imports
 
 The imports are handled by `isort`. There is a configuration file for
