@@ -57,7 +57,7 @@ or decision involved. In that case explain WHY this decision was taken.
 
 End the message with references, such as task or bug numbers, PR numbers, and
 OPW tickets, following the suggested format:
-task-123 (related to task)
+LT-00386 (the Odoo task's issue number; links the commit to the task)
 Fixes #123  (close related issue on Github)
 Closes #123  (close related PR on Github)
 opw-123 (related to ticket)
